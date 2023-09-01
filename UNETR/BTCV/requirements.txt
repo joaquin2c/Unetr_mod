@@ -1,0 +1,12 @@
+torch==1.13.1
+monai==0.7.0
+nibabel==3.1.1
+tqdm==4.59.0
+einops==0.3.0
+tensorboardX==2.1
+albumentations
+
+
+pip install protobuf==3.20.*
+
+python main.py --roi_x 512 --roi_y 512 --roi_z 1--feature_size=32 --batch_size=1 --logdir=unetr_test --fold=0 --optim_lr=1e-4 --lrschedule=warmup_cosine --infer_overlap=0.5 --save_checkpoint True --data_dir=../../../../trabajos/medsegdiff/Data/liver_only/split_1/val
